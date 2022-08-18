@@ -5,6 +5,8 @@ from PIL import Image
 
 st.title("Image Classifier_APP")
 
+
+
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 @st.cache(allow_output_mutation=True)
@@ -26,7 +28,7 @@ def predict_class(image, model):
 
 
 model = load_model()
-st.title('Flower Classifier')
+st.title('Leaf Classifier detection')
 
 file = st.file_uploader("Upload an image ", type=["jpg", "png"])
 
